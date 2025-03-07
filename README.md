@@ -6,13 +6,13 @@ Este es un proyecto de blog desarrollado con Django, que permite a los usuarios 
 
 Características
 
-Publicaciones: Los usuarios pueden crear, editar y eliminar publicaciones.
+Publicaciones: Solamente la cuenta con superusuario puede crear posts.
 
 Autenticación: Sistema de registro, inicio y cierre de sesión.
 
 Página "Acerca de": Información sobre el blog.
 
-Panel administrativo: Disponible para gestionar usuarios y publicaciones.
+Panel administrativo: Disponible para gestionar usuarios y publicaciones. (siempre y cuando usemos al superusuario)
 
 Superusuario predeterminado:
 
