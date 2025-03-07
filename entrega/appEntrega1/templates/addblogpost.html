@@ -1,0 +1,26 @@
+{% extends "parent.html" %}
+
+{% block title %}
+Agregar Post
+{% endblock %}
+
+{% block logo %}
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="fw-bolder">Agregar un nuevo post</h1>
+        </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ myForm.as_p }}
+        <p>Campos disponibles: {{ myForm.fields|join:", " }}</p> <!-- Depuración -->
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>
+{% endblock %}
